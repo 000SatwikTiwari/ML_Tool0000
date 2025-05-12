@@ -1,8 +1,16 @@
-pip==21.3.1
-pandas==1.5.2
-numpy==1.24.0
-pymongo[srv]
-matplotlib==3.6.2
-seaborn==0.11.2
-scikit-learn==1.1.3
-scipy==1.9.3
+# Updated requirements.txt
+
+# Use modern pip that supports Python 3.12
+pip>=24.0
+
+# Use a compatible numpy version (1.26.0+ doesn't use distutils)
+numpy>=1.26.0
+
+# pandas 1.5.2 is not compatible with numpy 1.26+, upgrade to a compatible version
+pandas>=2.1.0
+
+scikit-learn==1.3.2
+matplotlib==3.7.1
+seaborn==0.12.2
+scipy==1.11.3
+streamlit==1.33.0
